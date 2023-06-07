@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Klarna</title>
+		<script src="https://kit.fontawesome.com/51ac2c1573.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="style.css"/>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<nav class="header__nav">
+					<ul class="menu" id="menu">
+						<li><a href="">Shopping categories</a></li>
+						<li><a href="">Deals and rewards</a></li>
+						<li><a href="">How Klarna works</a></li>
+						<li><a href="">Help</a></li>
+					</ul>
+					<div class="hamb-filed" id="hamb">
+						<i class="fa-duotone fa-bars"></i>
+					</div>
+					<div class="dop" id="dop">
+						<a class="dop1">Log in</a>
+						<a class="dop2">Sign up</a>
+					</div>
+				</nav>
+			</div>
+			<div class="popup" id="popup">
+							
+			</div>
+			<div class="section-1">
+				<div class="sec-1">
+				  <p class="sec-1-text">
+					Find it. Compare it. And pay how you like.
+				  </p>
+				  <form class="input">
+					<input id="input" type="text" placeholder="" name="search">
+					<button class="input-button"> <img src="/img/strelka.svg" alt=""></button>
+				  </form>
+				</div>
+				<img src="/img/IMAGE.png" class="sec-1-img" />
+			</div>
+			<div class="sliderNew" id="slider">
+				<p class="Partner">Partner stores</p>
+				
+				<div class="wrap">
+					<div class="sliderNew-item fade">
+						<img src="./img/slayder1.png" alt="" /> <p class="sliderNew-text">Etsy</p>
+					</div>
+					<div class="sliderNew-item fade">
+						<img src="./img/slayder2.png" alt="" /><p class="sliderNew-text">Bed Bath & Beyond</p>
+					</div>
+					<div class="sliderNew-item fade">
+						<img src="./img/slayder1.png" alt="" /><p class="sliderNew-text">Macy's</p>
+					</div>
+					<div class="prev">&lt;</div>
+					<div class="next">&gt;</div>
+				</div>
+				<div class="sliderNew-dots">
+					<div class="dot dot-active"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+				</div>
+			</div>
+			<div class="modal-open" id="modal-open">
+				<div class="sec-3-text">
+					<p class="sec-3-high-text">Klarna Card</p>
+					<p class="sec-3-main-text">Pay anywhere that accepts Visa.</p>
+					<p class="sec-3-dop-text">
+					  More time to pay is what we do. Charging interest? Not our thing. The
+					  Klarna Card has a 0% APR. Your credit score won’t be affected when you
+					  apply for or use the Klarna Card.
+					</p>
+					<button id="open-modal__btn">Learn more</button>
+				</div>
+				<img class="sec-3-img" src="/img/pay.png" alt="" />
+			</div>
+			<div class="modal" id="modal" >
+				<div class="modal__content">
+					<span class="modal__close close">&times;</span>
+        			<p class="modal__text">Pay with Klarna.</p>
+        			<div class="modal__cards">
+        				<div class="modal__card">
+          				<img class="modal__img" src="/img/pay1.png" alt="" />
+          				<p class="modal__card-text">Flex your payments</p>
+          				<p class="modal__card-text2">
+            				Enjoy the flexibility to shop what you love and split your purchase
+            				into 4 interest-free payments. No credit impact to apply.
+          				</p>
+        				</div>
+        				<div class="modal__card">
+          				<img class="modal__img" src="/img/pay2.png" alt="" />
+          				<p class="modal__card-text">Never miss a payment</p>
+          				<p class="modal__card-text2">
+           					Get more time to pay when you need it. Extend your due date easily
+            				in the app. Report returns in the app and we'll pause your payments.
+          				</p>
+        				</div>
+       					<div class="modal__card">
+          				<img class="modal__img" src="/img/pay3.png" alt="" />
+          				<p class="modal__card-text">Pay wherever, whenever</p>
+          				<p class="modal__card-text2">
+            				Pay however you like, wherever you want to shop—and do it directly
+            				from your desktop, phone or in-store.
+          				</p>
+        				</div>
+        		</div>
+				</div>
+			</div>
+			<div class="filtr">
+				<div id="myBtnContainer">
+				<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+				<button class="btn" onclick="filterSelection('clothes')"> Clothes</button>
+				<button class="btn" onclick="filterSelection('tech')"> Tech</button>
+				<button class="btn" onclick="filterSelection('gifts')"> Gifts</button>
+				<button class="btn" onclick="filterSelection('jewelry')"> Jewelry</button>
+				</div>
+				<div class="filtr-container">
+					<div class="filterDiv gifts ">
+						<img id="filterDiv-img" src="/img/card1.png">
+						<p>Roses are red</p></div>
+					<div class="filterDiv glothes">
+						<img id="filterDiv-img" src="/img/card2.png">
+						<p>Shop Activewear</p>
+					</div>
+					<div class="filterDiv tech">
+						<img id="filterDiv-img" src="/img/card3.png">
+						<p>Affordable tech</p>
+					</div>
+					<div class="filterDiv clothes">
+						<img id="filterDiv-img" src="/img/card4.png">
+						<p>Lift and tone</p>
+					</div>
+					<div class="filterDiv clothes">
+						<img id="filterDiv-img" src="/img/card5.png">
+						<p>Go the distance</p>
+					</div>
+					<div class="filterDiv gifts jewelry">
+						<img id="filterDiv-img" src="/img/card6.png">
+						<p>Shop Jewelry</p>
+					</div>
+					<div class="filterDiv clothes">
+						<img id="filterDiv-img" src="/img/card7.png">
+						<p>Shop Dresses</p>
+					</div>
+					<div class="filterDiv clothes">
+						<img id="filterDiv-img" src="/img/card8.png">
+						<p>Shop Outerwear</p>
+					</div>
+					<div class="filterDiv Gifts">
+						<img id="filterDiv-img" src="/img/card9.png">
+						<p>Furry friend faves</p>
+					</div>
+				</div>
+			</div>
+			<div class="info" id="tab">
+				<div class="info-title">
+					<p class="info-title-main">Discover Klarna features.</p>
+					<p class="info-title-dop">Download the app to enjoy all of Klarna's features. Start saving time and money now in just a few taps.</p>
+				</div>
+				<div class="info-header">
+					<div class="info-header-tab active">Rewards</div>
+					<div class="info-header-tab">Loyalty cards</div>
+					<div class="info-header-tab">Referrals</div>
+					<div class="info-header-tab">Price drops</div>
+					<div class="info-header-tab">Returns</div>
+					<div class="info-header-tab">Delivery tracking</div>
+				</div>
+				<div class="info-tabcontent fade">
+					<div class="photo">
+						<img src="img/tabs1.png" alt="Massage" />
+					</div>
+					<div class="description">
+						<div class="description-title">Rewards</div>
+						<div class="description-text">
+							Join our Rewards club and earn points when shopping. Turn your points into rewards from world-class brands.
+						</div>
+						<button id="myBtn" class="description-btn">Learn More</button>
+					</div>
+				</div>
+				<div class="info-tabcontent fade">
+					<div class="photo">
+						<img src="img/tabs1.png" alt="Massage" />
+					</div>
+					<div class="description">
+						<div class="description-title">Loyalty cards</div>
+						<div class="description-text">
+							Join our Rewards club and earn points when shopping. Turn your points into rewards from world-class brands.
+						</div>
+						<button id="myBtn" class="description-btn">Learn More</button>
+					</div>
+				</div>
+				<div class="info-tabcontent fade">
+					<div class="photo">
+						<img src="img/tabs1.png" alt="Massage" />
+					</div>
+					<div class="description">
+						<div class="description-title">Referrals</div>
+						<div class="description-text">
+							Join our Rewards club and earn points when shopping. Turn your points into rewards from world-class brands.
+						</div>
+						<button id="myBtn" class="description-btn">Learn More</button>
+					</div>
+				</div>
+				<div class="info-tabcontent fade">
+					<div class="photo">
+						<img src="img/tabs1.png" alt="Massage" />
+					</div>
+					<div class="description">
+						<div class="description-title">Price drops</div>
+						<div class="description-text">
+							Join our Rewards club and earn points when shopping. Turn your points into rewards from world-class brands.
+						</div>
+						<button id="myBtn" class="description-btn">Learn More</button>
+					</div>
+				</div>
+				<div class="info-tabcontent fade">
+					<div class="photo">
+						<img src="img/tabs1.png" alt="Massage" />
+					</div>
+					<div class="description">
+						<div class="description-title">Returns</div>
+						<div class="description-text">
+							Join our Rewards club and earn points when shopping. Turn your points into rewards from world-class brands.
+						</div>
+						<button id="myBtn" class="description-btn">Learn More</button>
+					</div>
+				</div>
+				<div class="info-tabcontent fade">
+					<div class="photo">
+						<img src="img/tabs1.png" alt="Massage" />
+					</div>
+					<div class="description">
+						<div class="description-title">Delivery tracking</div>
+						<div class="description-text">
+							Join our Rewards club and earn points when shopping. Turn your points into rewards from world-class brands.
+						</div>
+						<button id="myBtn" class="description-btn">Learn More</button>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+			<div class="footer-top">
+			  <div class="footer-block1">
+				<img class="footer-img" src="/img/amerika.png" alt="" />
+				<p class="footer-block1-text">United States</p>
+			  </div>
+			  <div class="footer-block2">
+				<div class="accordion" id="accordion">
+					<div class="button-1">
+						<button class="accordion-button">Klarna</button>
+						<div class="panel">
+							  <p>About us</p>
+							<p>Careers</p>
+							<p>Legal</p>
+							<p>Press</p>
+							<p>Extra O blog</p>
+							<p>Privacy</p>
+							<p>Auto-import / Magic import</p>
+							<p>Sustainability</p>
+						</div>
+					</div>
+					<div class="button-1">
+						<button class="accordion-button">Customer</button>
+					<div class="panel">
+  						<p>Lorem ipsum...</p>
+						<p>Lorem ipsum...</p>
+						<p>Lorem ipsum...</p>
+						<p>Lorem ipsum...</p>
+						<p>Lorem ipsum...</p>
+						<p>Lorem ipsum...</p>
+						<p>Lorem ipsum...</p>
+						<p>Lorem ipsum...</p>
+					</div>
+					</div>
+					<div class="button-1">
+						<button class="accordion-button">Business</button>
+					<div class="panel">
+						<p>Lorem ipsum...</p>
+						<p>Lorem ipsum...</p>
+						<p>Lorem ipsum...</p>
+						<p>Lorem ipsum...</p>
+						<p>Lorem ipsum...</p>
+						<p>Lorem ipsum...</p>
+						<p>Lorem ipsum...</p>
+						<p>Lorem ipsum...</p>
+					</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+			<div class="footer-bottom">
+			  <p class="footer-bottom-text">
+				Monthly financing through Klarna is issued by WebBank, member FDIC.
+				Copyright © 2005-2022 Klarna Inc. NMLS #1353190, 629 N. High Street,
+				Third Floor, Columbus, OH 43215. Other CA resident loans made or
+				arranged pursuant to a California Financing Law license.
+			  </p>
+			</div>
+		 	 </footer>
+		</div>
+		<script src="js/script.js"></script>
+		<script src="js/filtr.js"></script>
+	</body>
+</html>
